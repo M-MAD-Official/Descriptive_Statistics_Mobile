@@ -20,4 +20,4 @@ python3 -m pip install -U prettytable
 ```
 
 ## Acknowledges
-This program was made possible by the work of [PrettyTable contributors](https://github.com/jazzband/prettytable).
+This program was made possible by the work of [PrettyTable](https://github.com/jazzband/prettytable) contributors.
