@@ -14,5 +14,10 @@ intervals between each class should be rounded (`False` value) or kept as
 float (`True` value). Setting `calculate_q` and `calculate_d` values make the
 program calculate and print Quartiles and Deciles of `Continuous` data.
 
-#### Acknowledges
+You need to install `prettytable` in order to use this program, install it with:
+```shell
+python3 -m pip install -U prettytable
+```
+
+## Acknowledges
 This program was made possible by the work of [PrettyTable contributors](https://github.com/jazzband/prettytable).
