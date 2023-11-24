@@ -23,7 +23,7 @@ data = [100, 121, 130, 129, 150, 116, 120, 117, 154, 125, 110, 119, 130,
 data_type = Continuous()
 # data_type = Discrete()
 
-number_of_classes = 4
+number_of_classes = 8
 
 precise_intervals = False
 # precise_intervals = True
@@ -95,9 +95,14 @@ def quantile_calc(data, p, class_ranges, f_i_lst, F_i_lst):
     np_F_in_w = np_F * w
     np_F_in_w_on_f = np_F_in_w / f
     q = prev_L + np_F_in_w_on_f
-    print(f"Q_{p} = L + ((np-F)w)/f = {prev_L} + (({len(data)}*{p}-{prev_F}){w})/{f} = \
-{prev_L} + (({np}-{prev_F}){w})/{f} = {prev_L} + (({np_F}){w})/{f} = \
-{prev_L} + {np_F_in_w}/{f} = {prev_L} + {np_F_in_w_on_f} = {q}")
+    print(f"Q_{p} (The {q_class_no+1}th class; \
+({class_ranges[q_class_no][0]}, {class_ranges[q_class_no][1]})) = \
+L + ((np-F)w)/f = \
+{prev_L} + (({len(data)}*{p}-{prev_F}){w})/{f} = \
+{prev_L} + (({np}-{prev_F}){w})/{f} = \
+{prev_L} + (({np_F}){w})/{f} = \
+{prev_L} + {np_F_in_w}/{f} = \
+{prev_L} + {np_F_in_w_on_f} = {q}")
 
 
 def fdt(x_i_lst, f_i_lst, F_i_lst, r_i_lst, R_i_lst, f_i_times_x_i_lst,
