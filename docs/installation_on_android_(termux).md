@@ -7,7 +7,7 @@ forward but it have some issues rendering the Frequency Distribution Table.
 [F-Droid](https://f-droid.org/en/packages/com.termux) or from their
 [GitHub Repo](https://github.com/termux/termux-app#github).
 2. Open the Termux app and paste the following commands line-by-line to it and
-then press to enter.
+then press enter to run each one.
 ```sh
 pkg update && pkg upgrade
 pkg install python3 git nano
